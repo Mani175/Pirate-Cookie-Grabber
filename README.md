@@ -3,6 +3,7 @@
 **I Am not responsible for any malicious use of this program**
 
 Pirate Stealer steals .ROBLOSECURITY cookie from Roblox Studio Registry
+Discord server : https://discord.gg/nNRyWJbc6m
 # Feautres
 	🔴 Crashes when cookie inside registry is not valid
 	🟢Sends Robux Balance to webhook
