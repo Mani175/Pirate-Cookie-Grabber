@@ -1,7 +1,3 @@
-""""
-Please dont remove these credits
-Scripter : Mani.#0001
-"""
 
 import requests
 from winreg import OpenKey, HKEY_CURRENT_USER, EnumValue
