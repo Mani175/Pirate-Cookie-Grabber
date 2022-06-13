@@ -17,7 +17,6 @@ try:
     import requests
     from winreg import OpenKey, HKEY_CURRENT_USER, EnumValue
     import robloxpy
-    import robloxapi
     import json
     import os
 except:
