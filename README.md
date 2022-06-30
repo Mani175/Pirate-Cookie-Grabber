@@ -3,10 +3,10 @@
 **I Am not responsible for any malicious use of this program**
 
 
-Pirate Stealer steals .ROBLOSECURITY cookie from Roblox Studio Registry
+Pirate Cookie grabber, The most Over-powered cookie logger in github 🤯
 https://discord.gg/nNRyWJbc6m
 # Feautres
-	🔴 Grabs only from Roblox studio, not browsers
+	🟢 Grabs Cookie from (Edge,opera,chrome,etc.)
 	🟢Sends Robux Balance to webhook
 	🟢Sends Premium Status to webhook
 	🟢Sends Roblox Username to webhook
@@ -14,5 +14,5 @@ https://discord.gg/nNRyWJbc6m
 	🟣NOT DETECTED BY WINDOWS DEFENDER AND SOME OTHER ANTI VIRUSES
 # To Do
 	💎Add Token Grabber
-	💎Add Steal Cookies from browser
+	💎Add EXE version Builder
 	💎Add Password Stealer
