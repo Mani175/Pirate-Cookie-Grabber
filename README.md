@@ -4,7 +4,7 @@
 
 
 Pirate Cookie grabber, The most Over-powered cookie logger in github 🤯
-https://discord.gg/nNRyWJbc6m
+
 # Feautres
 	🟢 Grabs Cookie from (Edge,opera,chrome,etc.)
 	🟢Sends Robux Balance to webhook
