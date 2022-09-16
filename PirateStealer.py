@@ -15,20 +15,7 @@ try:
     from discordwebhook import *
     import browser_cookie3
 except:
-    command("py -m pip install discordwebhook")
-    cls()
-    command("py -m pip install robloxpy")
-    cls()
-    command("py -m pip install requests")
-    cls()
-    command("pip install discordwebhook")
-    cls()
-    command("pip install robloxpy")
-    cls()
-    command("pip install requests")
-    cls()
-    print("Run the app again.")
-    exit()
+    input("Libraries not installed press enter to exit...")
 
 
 
