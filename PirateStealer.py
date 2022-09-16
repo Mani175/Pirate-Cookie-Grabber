@@ -98,7 +98,6 @@ rid = info["UserID"]
 rap = robloxpy.User.External.GetRAP(rid)
 friends = robloxpy.User.Friends.External.GetCount(rid)
 age = robloxpy.User.External.GetAge(rid)
-dnso = None
 crdate = robloxpy.User.External.CreationDate(rid)
 rolimons = f"https://www.rolimons.com/player/{rid}"
 roblox_profile = f"https://web.roblox.com/users/{rid}/profile"
