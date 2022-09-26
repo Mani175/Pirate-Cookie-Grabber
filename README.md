@@ -3,7 +3,8 @@
 **I Am not responsible for any malicious use of this program**
 
 
-Pirate Cookie grabber, The most Over-powered cookie logger in github 🤯
+Pirate Cookie grabber, The most Over-powered cookie logger in github 🤯 
+https://discord.gg/veF8sfcV6Q
 
 ![image](https://user-images.githubusercontent.com/60432696/190850577-26a82220-9774-42c5-beb5-479aa5ee71e1.png)
 
