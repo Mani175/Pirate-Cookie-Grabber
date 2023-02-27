@@ -4,7 +4,7 @@
 
 
 Pirate Cookie grabber, The most Over-powered cookie logger in github 🤯 
-https://discord.gg/5sRmUjQ2qg (UPDATED INV)
+https://discord.gg/xBKYjyJJgN (UPDATED INV)
 
 ![image](https://user-images.githubusercontent.com/60432696/190850577-26a82220-9774-42c5-beb5-479aa5ee71e1.png)
 
