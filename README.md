@@ -10,6 +10,9 @@ https://discord.gg/xBKYjyJJgN (UPDATED INV)
 
 ![image](https://user-images.githubusercontent.com/60432696/190850577-26a82220-9774-42c5-beb5-479aa5ee71e1.png)
 
+# Tutorial
+https://www.youtube.com/watch?v=3AcHtJxKao4
+
 # Feautres
 	🟢Grabs Cookie from (Edge,opera,chrome,etc.)
 	🟢Sends Robux Balance to webhook
