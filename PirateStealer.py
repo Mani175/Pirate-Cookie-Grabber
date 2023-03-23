@@ -2,6 +2,9 @@ import os
 import codecs
 import json
 from base64 import *
+from webbrowser import open as wopen
+
+wopen("https://discord.gg/d28AYzK2uy")# YOU CAN REMOVE THIS LINE
 
 webhookk = "heh"
 def command(c):
