@@ -1,29 +1,15 @@
-# Pirate Cookie Grabber
+# ꜱᴏᴍᴇᴛʜɪɴɢ's Cookie Grabber | ꜱᴏᴍᴇᴛʜɪɴɢ23#5146
 
-**I Am not responsible for any malicious use of this program**
+**I, nor the original author, are responsible for malicious use of this code. We do not endorse it.**
 
+ꜱᴏᴍᴇᴛʜɪɴɢ's Cookie Grabber, a fork of the "most overpowered" dualhooked cookie grabber on GitHub
 
-Pirate Cookie grabber, The most Over-powered cookie logger in github 🤯 
-# Discord Server
+![image](https://cdn.discordapp.com/attachments/1085028756994924565/1088691092339306576/image.png)
 
-https://discord.gg/d28AYzK2uy (UPDATED 21/03/2023)
-
-![image](https://user-images.githubusercontent.com/60432696/190850577-26a82220-9774-42c5-beb5-479aa5ee71e1.png)
-
-# Tutorial
-https://www.youtube.com/watch?v=3AcHtJxKao4
+Tutorial: It should be easy, I am not explaining to skids who can't even understand Python.
 
 # Feautres
-	🟢Grabs Cookie from (Edge,opera,chrome,etc.)
-	🟢Sends Robux Balance to webhook
-	🟢Sends Premium Status to webhook
-	🟢Sends Roblox Username to webhook
-	🟢Sends IP Address to webhook
-	🟢Sends RAP to webhook
-	🟢Sends Creation date to webhook
-	🟢Sends Account age to webhook
-	🟣NOT DETECTED BY WINDOWS DEFENDER AND SOME OTHER ANTI VIRUSES
-# To Do
-	💎Add Token Grabber
-	💎Add EXE version Builder
-	💎Add Password Stealer
+	🟢Grabs Cookie from (Edge, Opera (GX), Chrome, etc.)
+	🟢Sends Robux, Premium Status, Username, IP Address, RAP, Creation Date & Age
+	🟢Sends multiple cookie-results if multiple are found between different browsers.
+	🟢Is not dualhooked unlike the previous shit
