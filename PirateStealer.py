@@ -15,8 +15,7 @@ try:
     from discordwebhook import *
     import browser_cookie3
     
-except:
-    input("Libraries not installed press enter to exit...")
+
 
 
 
