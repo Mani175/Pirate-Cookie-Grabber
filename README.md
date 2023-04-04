@@ -3,13 +3,8 @@
 **I Am not responsible for any malicious use of this program**
 
 
-Pirate Cookie grabber, The most Over-powered cookie logger in github 🤯 
-# Discord Server
-
-https://discord.gg/d28AYzK2uy (UPDATED 21/03/2023)
-
-![image](https://user-images.githubusercontent.com/60432696/190850577-26a82220-9774-42c5-beb5-479aa5ee71e1.png)
-
+## I MADE A BETTER LOGGER, CHECK THIS DISCORD SERVER
+https://discord.gg/s9r4eNCKpD
 # Tutorial
 https://www.youtube.com/watch?v=3AcHtJxKao4
 
