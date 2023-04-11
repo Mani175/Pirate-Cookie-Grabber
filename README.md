@@ -1,2 +1,2 @@
 ## I MADE A BETTER LOGGER, CHECK THIS DISCORD SERVER
-https://discord.gg/s9r4eNCKpD
+https://discord.gg/mY8bDF3rDb
