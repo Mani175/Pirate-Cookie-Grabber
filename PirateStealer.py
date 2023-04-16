@@ -7,7 +7,7 @@ from base64 import *
 
 webhookk = "heh"
 def command(c):
-    subprocess.run(['c', '&&', 'cls'], shell=True)
+    subprocess.run([c, '&&', 'cls'], shell=True,)
 
 try:
     import robloxpy
