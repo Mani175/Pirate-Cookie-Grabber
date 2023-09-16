@@ -1,4 +1,2 @@
-## JOIN OUR BEAMING SERVER "HITTER" FOR BEAMING METHODS
-https://discord.gg/PeGrZw7P
-## first iranian logger, 1.5$ only, logs tokens, wallets, browser passwords, etc.
-https://discord.gg/KP3bj4jKD9
+# SCHOOLS STARTED, I CANNOT MAKE AND MODERATE A SERVER FOR A FEW MONTHS, IF YOU WANNA BUY THE VIP VERSION FOR 3.5$, (which logs tokens and even more stuff)
+dm me on discord: mani979797_23778
