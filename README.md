@@ -1,2 +1,2 @@
-# IF YOU WANNA BUY THE VIP VERSION, DM ME
-dm me on discord: mani979797_23778
+# DISCORD SERVER BACK! (23. JAN 2024)
+Join for VIP LOGGERS and TUTORIALS: https://discord.gg/qBxv4zQt
