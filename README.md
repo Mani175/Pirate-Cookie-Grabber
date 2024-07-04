@@ -1,4 +1,5 @@
 # [DISCORD SERVER](https://discord.gg/skGjfQ78hy) Updated JULY 2024
-# VIP LOGGER 2.0, Logs ALL COOKIES and ALL PASSWORDS from ALL WEBSITES (includes roblox)
+# Pirate Cookie Grabber Showcase (This Logger)
+![image](https://github.com/Mani175/Pirate-Cookie-Grabber/assets/60432696/68100ff2-790f-4d36-91ab-25bd3ab79884)
+# Paid Logger Shocase (Buy in discord server + the zip file includes passwords, cookies, credit cards and history)
 ![image](https://github.com/Mani175/Pirate-Cookie-Grabber/assets/60432696/a497b368-db0a-4638-a9a5-188cd662ded3)
-
