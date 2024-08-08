@@ -1,4 +1,4 @@
-# [Our Website](https://pirate-stealer.carrd.co/) (Contact Us + Beaming Method)
+# [Our Website (Ad Included)]([https://pirate-stealer.carrd.co/](https://cuty.io/IEWMDZqM)) (Contact Us + Beaming Method)
 # Pirate Cookie Grabber Showcase (This Logger)
 ![image](https://github.com/Mani175/Pirate-Cookie-Grabber/assets/60432696/68100ff2-790f-4d36-91ab-25bd3ab79884)
 # Paid Logger Shocase (Buy in our website)
