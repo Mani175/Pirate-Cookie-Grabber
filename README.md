@@ -1,4 +1,4 @@
-# [Discord Server](https://discord.gg/kWBzTvVCP9) Further information + free methods + support. <br />
+# [Discord Server 9TH SEPTEMBER](https://discord.gg/yUZ5sA9F) Further information + free methods + support. <br />
 # [Our Website](https://pirate-stealer.carrd.co) UPDATED 2024, BUY METHODS + CONTACT ME <br />
 
 # Pirate Cookie Grabber Showcase (This Logger)
