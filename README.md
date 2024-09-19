@@ -1,4 +1,4 @@
-# [DISCORD SERVER](https://discord.gg/CAHyCbZUu6)
+# DISCORD SERVER GOT TERMED, DM ME IN DISCORD: maniwashere1
 # [Our Website](https://pirate-stealer.carrd.co) UPDATED 2024, BUY METHODS + CONTACT ME <br />
 
 # Pirate Cookie Grabber Showcase (This Logger)
