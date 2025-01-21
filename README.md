@@ -1,5 +1,4 @@
-# [Our Website (click here)](https://pirate-stealer.carrd.co) UPDATED DECEMBER 2024, BUY METHODS + CONTACT ME <br />
-# DISCORD SERVER GOT TERMED, DM ME IN DISCORD: maniwashere1
+# [Our Website (click here)](https://pirate-stealer.carrd.co) [Our Discord Server (click here)](https://discord.gg/jUFxrRuEyW)
 
 # Pirate Cookie Grabber Showcase (This Project/Logger)
 ![image](https://github.com/Mani175/Pirate-Cookie-Grabber/assets/60432696/68100ff2-790f-4d36-91ab-25bd3ab79884)
